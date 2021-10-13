@@ -29,9 +29,9 @@ public class CarController {
         return carService.afficher();
     }
 
-    @GetMapping(path = "cars/{car}")
-    public List<Car> search(@PathVariable String car){
-        return carService.search(car);
+    @GetMapping(path = "cars/{matricule}")
+    public List<Car> search(@PathVariable String matricule){
+        return carService.search(matricule);
     }
 
 

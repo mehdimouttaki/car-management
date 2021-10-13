@@ -21,7 +21,7 @@ public class CarService {
     }
 
 
-    public List<Car> search(String car) {
-        return carRepository.findByMatricule(car);
+    public List<Car> search(String matricule) {
+        return carRepository.findByMatricule(matricule);
     }
 }
