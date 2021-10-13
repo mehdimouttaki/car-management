@@ -21,6 +21,10 @@ public class ClientService {
         return clientRepository.findAll();
     }
 
+    public List<Client> search(String firstName, String lastName, String phone, String mail,String cin) {
+        return clientRepository.findClient(firstName,lastName,phone,mail,cin);
+    }
+
    /* public List<Client> search(String client) {
         return clientRepository.findClient(client);
     }*/

@@ -29,8 +29,8 @@ public class ClientController {
     public List<Client> findAll(){
         return clientService.afficher();
     }
-  /*  @GetMapping(path = "clients/{client}")
-    public List<Client> search(@PathVariable String client){
-        return clientService.search(client);
-    }*/
+   @GetMapping(path = "clients/{firstName}")
+    public List<Client> search(@PathVariable String firstName,String lastName,String phone,String mail,String cin){
+        return clientService.search(firstName,lastName,phone,mail,cin);
+    }
 }
