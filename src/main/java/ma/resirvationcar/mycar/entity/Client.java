@@ -13,11 +13,17 @@ public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(nullable = false)
     private String firstName;
+    @Column(nullable = false)
     private String lastName;
+    @Column(unique = true, nullable = false)
     private String phone;
+    @Column(unique = true, nullable = false)
     private String mail;
+    @Column(unique = true, nullable = false)
     private  String cin;
+    @Column(nullable = true)
     private String image;
 
 }

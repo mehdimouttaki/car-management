@@ -13,8 +13,11 @@ public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(unique = true, nullable = false)
     private String matricule;
+    @Column(nullable = true)
     private Double priceDay;
+    @Column(nullable = true)
     private String image;
 
 
